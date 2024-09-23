@@ -140,7 +140,21 @@
 //     payment_id SERIAL PRIMARY KEY,
 //     appointment_id BIGINT NOT NULL,
 //     user_id BIGINT NOT NULL,       -- Added this column to track which user made the payment
-//     amount DECIMAL(10, 2) NOT NULL,  -- 
+//     amount DECIMAL(10, 2) NOT NULL,  --
 //     payment_status VARCHAR(50) NOT NULL, -- Track the status of the payment
 //     FOREIGN KEY (appointment_id) REFERENCES appointments(appointment_id)
+// );
+
+
+// CREATE TABLE reviews(
+//     review_id SERIAL PRIMARY KEY,
+//     appointment_id BIGINT NOT NULL,
+//     patient_id BIGINT NOT NULL,
+//     staff_id BIGINT NOT NULL,
+//     rating INTEGER NOT NULL CHECK(rating >= 1 AND rating <= 5),
+//     review_content TEXT,
+//     created_at TIMESTAMP DEFAULT NOW(),
+//     FOREIGN KEY(appointment_id) REFERENCES appointments(appointment_id),
+//     FOREIGN KEY(patient_id) REFERENCES patients(id),
+//     FOREIGN KEY(staff_id) REFERENCES medical_staff(staff_id)
 // );

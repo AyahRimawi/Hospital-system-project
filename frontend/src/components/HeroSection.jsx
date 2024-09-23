@@ -108,7 +108,7 @@ const HeroSection = () => {
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         effect="fade"
         loop
         className="h-full w-full"
@@ -140,7 +140,7 @@ const HeroSection = () => {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="bg-[#05464e] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#05464e]/90 transition duration-300"
+                      className="bg-white text-[#05464e] px-28 py-3 md:mt-3 rounded-full text-lg font-semibold hover:bg-[#e6f0f5] transition duration-300"
                     >
                       Book your appointment now{" "}
                     </motion.button>

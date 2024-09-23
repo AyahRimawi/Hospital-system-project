@@ -67,7 +67,7 @@ const ContactUsPage = () => {
         <main className="container mx-auto mt-8 p-4">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
-              <h2 className="text-3xl font-semibold text-blue-800 mb-6">
+              <h2 className="text-3xl font-semibold text-[#05464e] mb-6">
                 Contact Us
               </h2>
               <form onSubmit={handleSubmit}>
@@ -84,7 +84,7 @@ const ContactUsPage = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#05464e]"
                     placeholder="Your Name"
                     required
                   />
@@ -102,7 +102,7 @@ const ContactUsPage = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#05464e]"
                     placeholder="Your Email"
                     required
                   />
@@ -120,35 +120,35 @@ const ContactUsPage = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows="4"
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#05464e]"
                     placeholder="Your Message"
                     required
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+                  className="bg-[#05464e] text-white px-6 py-3 rounded-md hover:bg-[#adbabb] transition duration-300 transform hover:scale-105"
                   disabled={loading}
                 >
-                  {loading ? 'Sending...' : 'Send Message'}
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-6">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-6">
+              <h3 className="text-2xl font-semibold text-[#05464e] mb-6">
                 Contact Information
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Phone className="h-6 w-6 text-blue-600 mr-3" />
+                  <Phone className="h-6 w-6 text-[#05464e] mr-3" />
                   <span>+1 (123) 456-7890</span>
                 </div>
                 <div className="flex items-center">
-                  <Mail className="h-6 w-6 text-blue-600 mr-3" />
+                  <Mail className="h-6 w-6 text-[#05464e] mr-3" />
                   <span>info@hospitalmanagementsystem.com</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="h-6 w-6 text-blue-600 mr-3" />
+                  <MapPin className="h-6 w-6 text-[#05464e] mr-3" />
                   <span>123 Healthcare Ave, Medical City, HC 12345</span>
                 </div>
               </div>

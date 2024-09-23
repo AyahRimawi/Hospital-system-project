@@ -5,6 +5,7 @@ import { Download } from "lucide-react";
 import jsPDF from "jspdf";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import UnreviewedAppointments from "../components/UnreviewedAppointments";
 
 const PatientProfile = () => {
   const [patientData, setPatientData] = useState(null);
@@ -36,8 +37,8 @@ const PatientProfile = () => {
     const pdf = new jsPDF("p", "mm", "a4");
 
     // Set colors
-    const primaryColor = "#1F2B6C";
-    const secondaryColor = "#BFD2F8";
+    const primaryColor = "#05464e";
+    const secondaryColor = "#e6f0f5";
 
     // Header
     pdf.setFillColor(primaryColor);
@@ -108,7 +109,7 @@ const PatientProfile = () => {
       <div className="bg-white mt-20 min-h-screen p-6 font-serif">
         <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
           <div className="flex flex-col md:flex-row">
-            <div className="bg-[#1F2B6C] p-8 md:w-1/3">
+            <div className="bg-[#05464e] p-8 md:w-1/3">
               <div className="mb-8">
                 <img
                   src={
@@ -116,16 +117,16 @@ const PatientProfile = () => {
                     "/default-avatar.png"
                   }
                   alt="Profile"
-                  className="w-48 h-48 mx-auto rounded-full object-cover border-4 border-[#BFD2F8]"
+                  className="w-48 h-48 mx-auto rounded-full object-cover border-4 border-[#e6f0f5]"
                 />
               </div>
               <h2 className="text-2xl font-bold text-white text-center mb-4">
                 {patientData.username}
               </h2>
-              <p className="text-[#BFD2F8] text-center">{patientData.email}</p>
+              <p className="text-[#e6f0f5] text-center">{patientData.email}</p>
             </div>
             <div className="p-8 md:w-2/3">
-              <h1 className="text-3xl font-bold text-[#1F2B6C] mb-8">
+              <h1 className="text-3xl font-bold text-[#05464e] mb-8">
                 Patient Profile
               </h1>
               <div className="grid grid-cols-2 gap-4 mb-6">
@@ -145,7 +146,7 @@ const PatientProfile = () => {
                   },
                 ].map((item, index) => (
                   <div key={index} className="mb-4">
-                    <p className="text-[#1F2B6C] text-sm font-semibold">
+                    <p className="text-[#05464e] text-sm font-semibold">
                       {item.label}
                     </p>
                     <p className="text-gray-700">{item.value}</p>
@@ -153,28 +154,28 @@ const PatientProfile = () => {
                 ))}
               </div>
 
-              <h3 className="text-xl font-semibold text-[#1F2B6C] mb-4">
+              <h3 className="text-xl font-semibold text-[#05464e] mb-4">
                 Appointment History
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-[#BFD2F8]">
-                      <th className="text-left p-2 text-[#1F2B6C]">
+                    <tr className="bg-[#e6f0f5]">
+                      <th className="text-left p-2 text-[#05464e]">
                         Doctor Name
                       </th>
-                      <th className="text-left p-2 text-[#1F2B6C]">
+                      <th className="text-left p-2 text-[#05464e]">
                         Time Of Appointment
                       </th>
-                      <th className="text-left p-2 text-[#1F2B6C]">Status</th>
-                      <th className="text-left p-2 text-[#1F2B6C]">
+                      <th className="text-left p-2 text-[#05464e]">Status</th>
+                      <th className="text-left p-2 text-[#05464e]">
                         Documents
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     {patientData.appointments?.map((appointment, index) => (
-                      <tr key={index} className="border-b border-[#BFD2F8]">
+                      <tr key={index} className="border-b border-[#e6f0f5]">
                         <td className="p-2">{appointment.doctor_name}</td>
                         <td className="p-2">{appointment.appointment_time}</td>
                         <td className="p-2">
@@ -190,7 +191,7 @@ const PatientProfile = () => {
                         </td>
                         <td className="p-2">
                           <button
-                            className="flex items-center text-[#1F2B6C] hover:text-[#BFD2F8] transition-colors"
+                            className="flex items-center text-[#05464e] hover:text-[#e6f0f5] transition-colors"
                             onClick={() => downloadAppointmentDetails(index)}
                           >
                             <Download size={16} className="mr-1" /> Download
@@ -200,6 +201,7 @@ const PatientProfile = () => {
                     ))}
                   </tbody>
                 </table>
+                <UnreviewedAppointments/>
               </div>
             </div>
           </div>

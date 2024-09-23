@@ -49,29 +49,29 @@
 //   };
 
 //   return (
-//     <nav className="bg-white shadow-md py-4 font-serif">
+//     <nav className="bg-[#f6f5f2] shadow-md py-4 font-serif">
 //       <div className="container mx-auto px-4 flex items-center justify-between">
 //         <div className="text-2xl font-bold text-gray-800">
 //           <Link to="/">HealthCare</Link>
 //         </div>
 //         <ul className="hidden md:flex space-x-8">
 //           <li>
-//             <Link to="/" className="text-gray-600 hover:text-blue-500">
+//             <Link to="/" className="text-gray-600 hover:text-[#04333a]">
 //               Home
 //             </Link>
 //           </li>
 //           <li>
-//             <Link to="/about" className="text-gray-600 hover:text-blue-500">
+//             <Link to="/about" className="text-gray-600 hover:text-[#04333a]">
 //               About
 //             </Link>
 //           </li>
 //           <li>
-//             <Link to="/contact" className="text-gray-600 hover:text-blue-500">
+//             <Link to="/contact" className="text-gray-600 hover:text-[#04333a]">
 //               Contact
 //             </Link>
 //           </li>
 //           <li>
-//             <Link to="/doctor" className="text-gray-600 hover:text-blue-500">
+//             <Link to="/doctor" className="text-gray-600 hover:text-[#04333a]">
 //               Our Doctor
 //             </Link>
 //           </li>
@@ -88,7 +88,7 @@
 //               {isDropdownOpen && (
 //                 <div
 //                   ref={dropdownRef}
-//                   className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
+//                   className="absolute top-full right-0 mt-2 w-48 bg-[#f6f5f2] border border-gray-200 rounded-lg shadow-lg z-10"
 //                 >
 //                   <ul className="py-2">
 //                     <li>
@@ -128,7 +128,7 @@
 //               )}
 //             </>
 //           ) : (
-//             <Link to="/login" className="text-gray-600 hover:text-blue-500">
+//             <Link to="/login" className="text-gray-600 hover:text-[#04333a]">
 //               Login
 //             </Link>
 //           )}
@@ -241,7 +241,7 @@
 //               {isDropdownOpen && (
 //                 <div
 //                   ref={dropdownRef}
-//                   className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-10 overflow-hidden transition-all duration-300 ease-in-out"
+//                   className="absolute top-full right-0 mt-2 w-48 bg-[#f6f5f2] border border-gray-200 rounded-lg shadow-lg z-10 overflow-hidden transition-all duration-300 ease-in-out"
 //                 >
 //                   <ul className="py-2">
 //                     {["My Profile", "My History", "My Prescription"].map(
@@ -417,24 +417,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md py-4">
+    <nav className="bg-[#f6f5f2] shadow-md py-4 font-serif">
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="text-2xl font-bold text-gray-800">
-          <Link to="/">WebsiteName</Link>
+          <Link to="/">HealthCare</Link>
         </div>
         <ul className="hidden md:flex space-x-8">
           <li>
-            <Link to="/" className="text-gray-600 hover:text-blue-500">
+            <Link to="/" className="text-gray-600 hover:text-[#04333a]">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="text-gray-600 hover:text-blue-500">
+            <Link to="/about" className="text-gray-600 hover:text-[#04333a]">
               About
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="text-gray-600 hover:text-blue-500">
+            <Link to="/contact" className="text-gray-600 hover:text-[#04333a]">
               Contact
             </Link>
           </li>
@@ -442,14 +442,14 @@ const Navbar = () => {
             <li>
               <Link
                 to="/feedback"
-                className="text-gray-600 hover:text-blue-500"
+                className="text-gray-600 hover:text-[#04333a]"
               >
                 Feedback
               </Link>
             </li>
           )}
           <li>
-            <Link to="/doctor" className="text-gray-600 hover:text-blue-500">
+            <Link to="/doctor" className="text-gray-600 hover:text-[#04333a]">
               Our Doctor
             </Link>
           </li>
@@ -460,7 +460,7 @@ const Navbar = () => {
               <div className="relative" ref={notificationDropdownRef}>
                 <button
                   onClick={handleNotificationDropdownToggle}
-                  className="text-gray-600 hover:text-blue-500 focus:outline-none"
+                  className="text-gray-600 hover:text-[#04333a] focus:outline-none"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -483,7 +483,7 @@ const Navbar = () => {
                   </span>
                 )}
                 {isNotificationDropdownOpen && (
-                  <div className="absolute top-full right-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+                  <div className="absolute top-full right-0 mt-2 w-64 bg-[#f6f5f2] border border-gray-200 rounded-lg shadow-lg z-10">
                     <ul className="py-2 max-h-64 overflow-y-auto">
                       {notifications.length > 0 ? (
                         notifications.map((notification) => (
@@ -525,7 +525,7 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <div
                   ref={dropdownRef}
-                  className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-10"
+                  className="absolute top-full right-0 mt-2 w-48 bg-[#f6f5f2] border border-gray-200 rounded-lg shadow-lg z-10"
                 >
                   <ul className="py-2">
                     <li>
@@ -565,7 +565,7 @@ const Navbar = () => {
               )}
             </>
           ) : (
-            <Link to="/login" className="text-gray-600 hover:text-blue-500">
+            <Link to="/login" className="text-gray-600 hover:text-[#04333a]">
               Login
             </Link>
           )}

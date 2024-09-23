@@ -173,58 +173,58 @@
 // axios.defaults.withCredentials = true;
 
 // const PrescriptionCard = ({ prescription, patientName, onDownload }) => (
-//   <div className="bg-white border-2 border-[#BFD2F8] rounded-xl p-6 mb-6 transition-all duration-500 hover:shadow-lg hover:scale-105 ">
+//   <div className="bg-white border-2 border-wtext-white rounded-xl p-6 mb-6 transition-all duration-500 hover:shadow-lg hover:scale-105 ">
 //     <div className="flex justify-between items-start mb-4">
-//       <h2 className="text-2xl font-sans font-bold text-[#1F2B6C]">
+//       <h2 className="text-2xl font-sans font-bold text-[#05464e]">
 //         Prescription
 //       </h2>
-//       {/* <span className="text-white text-xs font-bold px-3 py-1 rounded-full bg-[#1F2B6C]">
+//       {/* <span className="text-white text-xs font-bold px-3 py-1 rounded-full bg-[#05464e]">
 //         Active
 //       </span> */}
 //     </div>
 //     <div className="space-y-4 font-sans">
-//       <div className="flex items-center text-[#1F2B6C]">
+//       <div className="flex items-center text-[#05464e]">
 //         <User className="w-5 h-5 mr-2" />
 //         <span className="font-medium">Dr. {prescription.doctor_name}</span>
 //       </div>
-//       <div className="flex items-center text-[#1F2B6C]">
+//       <div className="flex items-center text-[#05464e]">
 //         <Calendar className="w-5 h-5 mr-2" />
 //         <span>{new Date().toLocaleDateString()}</span>
 //       </div>
-//       <div className="flex items-center text-[#1F2B6C]">
+//       <div className="flex items-center text-[#05464e]">
 //         <User className="w-5 h-5 mr-2" />
 //         <span>Patient: {patientName}</span>
 //       </div>
 //       <div className="space-y-2">
-//         <div className="flex items-center text-[#1F2B6C]">
+//         <div className="flex items-center text-[#05464e]">
 //           <ClipboardList className="w-5 h-5 mr-2" />
 //           <span className="font-medium">Diagnosis:</span>
 //         </div>
-//         <p className="text-[#1F2B6C] text-opacity-80 ml-7">
+//         <p className="text-[#05464e] text-opacity-80 ml-7">
 //           {prescription.diagnosis}
 //         </p>
 //       </div>
 //       <div className="space-y-2">
-//         <div className="flex items-center text-[#1F2B6C]">
+//         <div className="flex items-center text-[#05464e]">
 //           <Pill className="w-5 h-5 mr-2" />
 //           <span className="font-medium">Medications:</span>
 //         </div>
-//         <p className="text-[#1F2B6C] text-opacity-80 ml-7">
+//         <p className="text-[#05464e] text-opacity-80 ml-7">
 //           {prescription.drugs}
 //         </p>
 //       </div>
 //       <div className="space-y-2">
-//         <div className="flex items-center text-[#1F2B6C]">
+//         <div className="flex items-center text-[#05464e]">
 //           <Activity className="w-5 h-5 mr-2" />
 //           <span className="font-medium">Treatment Plan:</span>
 //         </div>
-//         <p className="text-[#1F2B6C] text-opacity-80 ml-7">
+//         <p className="text-[#05464e] text-opacity-80 ml-7">
 //           {prescription.treatment_plan}
 //         </p>
 //       </div>
 //     </div>
 //     <button
-//       className="mt-6 w-full bg-[#1F2B6C] hover:bg-opacity-90 text-white font-bold py-3 px-4 rounded-full transition duration-300 flex items-center justify-center"
+//       className="mt-6 w-full bg-[#05464e] hover:bg-opacity-90 text-white font-bold py-3 px-4 rounded-full transition duration-300 flex items-center justify-center"
 //       onClick={onDownload}
 //     >
 //       <Download className="w-5 h-5 mr-2" />
@@ -274,7 +274,7 @@
 //     const doc = new jsPDF();
 
 //     doc.setFontSize(20);
-//     doc.setTextColor(31, 43, 108); // #1F2B6C
+//     doc.setTextColor(31, 43, 108); // #05464e
 //     doc.text("Medical Prescription", 105, 15, null, null, "center");
 
 //     doc.setFontSize(12);
@@ -286,7 +286,7 @@
 //     doc.autoTable({
 //       startY: 60,
 //       styles: { fillColor: [191, 210, 248] }, // #BFD2F8
-//       headStyles: { fillColor: [31, 43, 108], textColor: [255, 255, 255] }, // #1F2B6C
+//       headStyles: { fillColor: [31, 43, 108], textColor: [255, 255, 255] }, // #05464e
 //       alternateRowStyles: { fillColor: [255, 255, 255] },
 //       head: [["Item", "Details"]],
 //       body: [
@@ -320,9 +320,9 @@
 //       <div className="min-h-screen bg-gray-50 p-6 font-sans">
 //         <div className="max-w-5xl mx-auto mt-16 bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-500 hover:shadow-lg">
 //           <div className="p-6">
-//             <h1 className="text-4xl font-bold text-[#1F2B6C] mb-8 text-center relative font-sans">
+//             <h1 className="text-4xl font-bold text-[#05464e] mb-8 text-center relative font-sans">
 //               <span>My Prescriptions</span>
-//               <div className="absolute -bottom-2 w-96 left-1/2 transform -translate-x-1/2 h-0.5 bg-[#BFD2F8]"></div>
+//               <div className="absolute -bottom-2 w-96 left-1/2 transform -translate-x-1/2 h-0.5 bg-wtext-white"></div>
 //             </h1>
 
 //             {error && (
@@ -333,9 +333,9 @@
 
 //             {loading ? (
 //               <div className="flex justify-center items-center space-x-2 my-6">
-//                 <div className="w-3 h-3 bg-[#1F2B6C] rounded-full animate-bounce"></div>
-//                 <div className="w-3 h-3 bg-[#1F2B6C] rounded-full animate-bounce200"></div>
-//                 <div className="w-3 h-3 bg-[#1F2B6C] rounded-full animate-bounce400"></div>
+//                 <div className="w-3 h-3 bg-[#05464e] rounded-full animate-bounce"></div>
+//                 <div className="w-3 h-3 bg-[#05464e] rounded-full animate-bounce200"></div>
+//                 <div className="w-3 h-3 bg-[#05464e] rounded-full animate-bounce400"></div>
 //               </div>
 //             ) : prescriptions.length > 0 ? (
 //               <div className="grid md:grid-cols-2 gap-6">
@@ -349,9 +349,9 @@
 //                 ))}
 //               </div>
 //             ) : (
-//               <div className="text-center text-[#1F2B6C] text-lg bg-[#BFD2F8] bg-opacity-30 rounded-lg p-6 animate-pulse">
+//               <div className="text-center text-[#05464e] text-lg bg-wtext-white bg-opacity-30 rounded-lg p-6 animate-pulse">
 //                 <p className="mb-4">No prescriptions available.</p>
-//                 <button className="bg-[#1F2B6C] text-white py-2 px-4 rounded-full text-base font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-md flex items-center justify-center mx-auto">
+//                 <button className="bg-[#05464e] text-white py-2 px-4 rounded-full text-base font-bold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-md flex items-center justify-center mx-auto">
 //                   <PlusCircle className="mr-2" size={20} />
 //                   Request New Prescription
 //                 </button>
@@ -604,12 +604,12 @@ const PrescriptionCard = ({ prescription, patientName, onDownload }) => {
   return (
     <div className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl">
       <div
-        className="bg-[#1F2B6C] p-6 text-white cursor-pointer"
+        className="bg-[#05464e] p-6 text-white cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
-            <Stethoscope className="w-6 h-6 text-[#BFD2F8]" />
+            <Stethoscope className="w-6 h-6 text-white" />
             <span className="font-semibold text-lg">
               Dr. {prescription.doctor_name}
             </span>
@@ -622,11 +622,11 @@ const PrescriptionCard = ({ prescription, patientName, onDownload }) => {
         </div>
         <div className="mt-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Calendar className="w-5 h-5 text-[#BFD2F8]" />
+            <Calendar className="w-5 h-5 text-white" />
             <span className="text-sm">{new Date().toLocaleDateString()}</span>
           </div>
           <div className="flex items-center space-x-2">
-            <User className="w-5 h-5 text-[#BFD2F8]" />
+            <User className="w-5 h-5 text-white" />
             <span className="text-sm">{patientName}</span>
           </div>
         </div>
@@ -636,30 +636,30 @@ const PrescriptionCard = ({ prescription, patientName, onDownload }) => {
           isExpanded ? "max-h-[500px]" : "max-h-0"
         }`}
       >
-        <div className="p-6 bg-[#BFD2F8] bg-opacity-10 space-y-4">
+        <div className="p-6 bg-wtext-white bg-opacity-10 space-y-4">
           <div>
-            <div className="flex items-center text-[#1F2B6C] mb-2">
+            <div className="flex items-center text-[#05464e] mb-2">
               <ClipboardList className="w-5 h-5 mr-2" />
               <span className="font-medium">Diagnosis</span>
             </div>
             <p className="text-gray-700 ml-7">{prescription.diagnosis}</p>
           </div>
           <div>
-            <div className="flex items-center text-[#1F2B6C] mb-2">
+            <div className="flex items-center text-[#05464e] mb-2">
               <Pill className="w-5 h-5 mr-2" />
               <span className="font-medium">Medications</span>
             </div>
             <p className="text-gray-700 ml-7">{prescription.drugs}</p>
           </div>
           <div>
-            <div className="flex items-center text-[#1F2B6C] mb-2">
+            <div className="flex items-center text-[#05464e] mb-2">
               <Activity className="w-5 h-5 mr-2" />
               <span className="font-medium">Treatment Plan</span>
             </div>
             <p className="text-gray-700 ml-7">{prescription.treatment_plan}</p>
           </div>
           <button
-            className="w-full bg-[#1F2B6C] hover:bg-opacity-90 text-white font-bold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center"
+            className="w-full bg-[#05464e] hover:bg-opacity-90 text-white font-bold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center"
             onClick={(e) => {
               e.stopPropagation();
               onDownload();
@@ -715,7 +715,7 @@ export default function MyPrescriptionPage() {
     const doc = new jsPDF();
 
     doc.setFontSize(20);
-    doc.setTextColor(31, 43, 108); // #1F2B6C
+    doc.setTextColor(31, 43, 108); // #05464e
     doc.text("Medical Prescription", 105, 15, null, null, "center");
 
     doc.setFontSize(12);
@@ -727,7 +727,7 @@ export default function MyPrescriptionPage() {
     doc.autoTable({
       startY: 60,
       styles: { fillColor: [191, 210, 248] }, // #BFD2F8
-      headStyles: { fillColor: [31, 43, 108], textColor: [255, 255, 255] }, // #1F2B6C
+      headStyles: { fillColor: [31, 43, 108], textColor: [255, 255, 255] }, // #05464e
       alternateRowStyles: { fillColor: [255, 255, 255] },
       head: [["Item", "Details"]],
       body: [
@@ -760,9 +760,9 @@ export default function MyPrescriptionPage() {
       <Navbar />
       <div className="min-h-screen bg-gray-50 p-6 font-serif">
         <div className="max-w-7xl mx-auto mt-16">
-          <h1 className="text-4xl font-bold text-[#1F2B6C] mb-12 text-center relative">
+          <h1 className="text-4xl font-bold text-[#05464e] mb-12 text-center relative">
             <span>My Prescriptions</span>
-            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-[#BFD2F8] rounded-full"></div>
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white rounded-full"></div>
           </h1>
 
           {error && (
@@ -774,9 +774,9 @@ export default function MyPrescriptionPage() {
 
           {loading ? (
             <div className="flex justify-center items-center space-x-2 my-12">
-              <div className="w-4 h-4 bg-[#1F2B6C] rounded-full animate-pulse"></div>
-              <div className="w-4 h-4 bg-[#1F2B6C] rounded-full animate-pulse delay-150"></div>
-              <div className="w-4 h-4 bg-[#1F2B6C] rounded-full animate-pulse delay-300"></div>
+              <div className="w-4 h-4 bg-[#05464e] rounded-full animate-pulse"></div>
+              <div className="w-4 h-4 bg-[#05464e] rounded-full animate-pulse delay-150"></div>
+              <div className="w-4 h-4 bg-[#05464e] rounded-full animate-pulse delay-300"></div>
             </div>
           ) : prescriptions.length > 0 ? (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -794,7 +794,7 @@ export default function MyPrescriptionPage() {
               <p className="text-xl text-gray-700 mb-6">
                 No prescriptions available.
               </p>
-              <button className="bg-[#1F2B6C] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center mx-auto">
+              <button className="bg-[#05464e] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center mx-auto">
                 Request New Prescription
               </button>
             </div>

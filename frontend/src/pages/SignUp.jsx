@@ -34,11 +34,22 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-teal-100">
-      <div className="bg-white p-10 rounded-2xl shadow-2xl w-full max-w-4xl">
+    <div className="min-h-screen flex items-center justify-center bg-[#f6f5f2] font-serif">
+      <div className="bg-white p-10 rounded-2xl shadow-2xl w-full max-w-4xl font-serif">
         <div className="flex justify-center mb-8">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-16 w-16 text-[#05464e]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+            />
           </svg>
         </div>
         <h2 className="text-3xl font-extrabold text-teal-800 text-center mb-8">
@@ -47,7 +58,10 @@ const Signup = () => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="flex space-x-4">
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="username"
+              >
                 Username
               </label>
               <input
@@ -61,7 +75,10 @@ const Signup = () => {
               />
             </div>
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
                 Email Address
               </label>
               <input
@@ -77,7 +94,10 @@ const Signup = () => {
           </div>
           <div className="flex space-x-4">
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="password"
+              >
                 Password
               </label>
               <input
@@ -91,7 +111,10 @@ const Signup = () => {
               />
             </div>
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="confirmPassword">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="confirmPassword"
+              >
                 Confirm Password
               </label>
               <input
@@ -107,7 +130,10 @@ const Signup = () => {
           </div>
           <div className="flex space-x-4">
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="gender">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="gender"
+              >
                 Gender
               </label>
               <select
@@ -123,7 +149,10 @@ const Signup = () => {
               </select>
             </div>
             <div className="flex-1">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="dob">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="dob"
+              >
                 Date of Birth
               </label>
               <input
@@ -138,16 +167,19 @@ const Signup = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+            className="w-full bg-[#05464e] text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
             disabled={loading}
           >
-            {loading ? 'Signing up...' : 'Sign Up'}
+            {loading ? "Signing up..." : "Sign Up"}
           </button>
         </form>
         {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         <p className="text-center text-gray-600 mt-6">
           Already have an account?{" "}
-          <Link to="/login" className="text-teal-600 hover:underline font-medium">
+          <Link
+            to="/login"
+            className="text-teal-600 hover:underline font-medium"
+          >
             Log In
           </Link>
         </p>
